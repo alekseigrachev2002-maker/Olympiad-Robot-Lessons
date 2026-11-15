@@ -73,13 +73,10 @@ Iskra Uno программируется как обычная Arduino Uno. По
 | [Motor Shield](assets/datasheets/motor-shield.pdf) | Драйвер моторов: каналы, пины управления, перемычки |
 | [HC-SR04](assets/datasheets/hc-sr04.pdf) | Ультразвуковой дальномер |
 | [Sharp GP2Y0A21](assets/datasheets/gp2y0a21.pdf) | Инфракрасный дальномер |
-
-| Схема | Файл |
-|---|---|
-| Модуль питания | [power_module_schematic.png](assets/datasheets/schematics/power_module_schematic.png) |
-| Датчик линии | [line_sensor_schematic.png](assets/datasheets/schematics/line_sensor_schematic.png) |
-| Arduino Uno | [arduino_uno_schematic.png](assets/datasheets/schematics/arduino_uno_schematic.png) |
-| Motor Shield | [arduino_motor_shield_schematic.png](assets/datasheets/schematics/arduino_motor_shield_schematic.png) |
+| [Схема модуля питания](assets/datasheets/schematics/power_module_schematic.png) | DC-DC и LDO, предохранители, светодиоды линий |
+| [Схема датчика линии](assets/datasheets/schematics/line_sensor_schematic.png) | Оптопара TCRT5000 и выход S |
+| [Схема Arduino Uno](assets/datasheets/schematics/arduino_uno_schematic.png) | Принципиальная схема платы |
+| [Схема Motor Shield](assets/datasheets/schematics/arduino_motor_shield_schematic.png) | Принципиальная схема драйвера на L298P |
 
 Справочник языка Arduino – на сайте [docs.arduino.cc](https://docs.arduino.cc/language-reference/).
 
