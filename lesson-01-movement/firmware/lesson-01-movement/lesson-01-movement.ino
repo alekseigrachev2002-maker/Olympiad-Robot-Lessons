@@ -17,8 +17,8 @@ void setup() {
 void motors(int16_t left, int16_t right) {
   left = constrain(left, -255, 255);    // ШИМ не бывает больше 255
   right = constrain(right, -255, 255);
-  digitalWrite(L_DIR, left > 0);        // направление: true – HIGH, false – LOW
-  digitalWrite(R_DIR, right > 0);       // TODO 1: робот крутится на месте – исправьте направление правого мотора
+  digitalWrite(L_DIR, left > 0);        // TODO 1: робот крутится на месте – исправьте направление левого мотора
+  digitalWrite(R_DIR, right > 0);       // направление: true – HIGH, false – LOW
   analogWrite(L_PWM, abs(left));        // скорость – модуль числа
   analogWrite(R_PWM, abs(right));
 }

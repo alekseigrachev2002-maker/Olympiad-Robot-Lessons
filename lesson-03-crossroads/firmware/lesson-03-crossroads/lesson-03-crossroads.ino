@@ -24,7 +24,7 @@ bool direction(int16_t speed, bool invDir) {  // с урока 2
   return (invDir) ? !dir : dir;
 }
 
-void motors(int16_t left, int16_t right, bool invLDir = false, bool invRDir = true) {  // с урока 2
+void motors(int16_t left, int16_t right, bool invLDir = true, bool invRDir = false) {  // с урока 2
   left = constrain(left, -255, 255);
   right = constrain(right, -255, 255);
   digitalWrite(L_DIR, direction(left, invLDir));

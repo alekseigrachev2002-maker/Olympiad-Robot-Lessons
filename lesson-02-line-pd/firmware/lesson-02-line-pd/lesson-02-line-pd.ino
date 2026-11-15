@@ -22,9 +22,9 @@ bool direction(int16_t speed, bool invDir) {
   return (invDir) ? !dir : dir;
 }
 
-// моторы стоят зеркально и подключены одинаково, поэтому правый для движения вперед
-// крутится в обратную сторону – invRDir = true (ответ к TODO 1 урока 1)
-void motors(int16_t left, int16_t right, bool invLDir = false, bool invRDir = true) {
+// моторы стоят зеркально и подключены одинаково, поэтому левый для движения вперед
+// крутится в обратную сторону – invLDir = true (ответ к TODO 1 урока 1)
+void motors(int16_t left, int16_t right, bool invLDir = true, bool invRDir = false) {
   left = constrain(left, -255, 255);
   right = constrain(right, -255, 255);
   digitalWrite(L_DIR, direction(left, invLDir));
