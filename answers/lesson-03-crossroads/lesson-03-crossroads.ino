@@ -1,14 +1,14 @@
 // УРОК 3: перекрестки. ОТВЕТЫ к заданиям TODO
 
-#define L_DIR 7   // левый мотор – канал M2
+#define L_DIR 7   // левый мотор — канал M2
 #define L_PWM 6
-#define R_DIR 4   // правый мотор – канал M1
+#define R_DIR 4   // правый мотор — канал M1
 #define R_PWM 5
 
 #define LINE_L A0  // левый датчик линии
 #define LINE_R A1  // правый датчик линии
 
-// TODO 1 (ответ): порог между белым (~920) и черным (~200); оба датчика ниже – перекресток.
+// TODO 1 (ответ): порог между белым (~920) и черным (~200); оба датчика ниже — перекресток.
 // 300 найден на машинке: датчики замечают линию раньше колес, робот докатывается и встает на линии
 #define THRESHOLD 300
 #define STOP_AT 3    // на каком перекрестке остановиться
@@ -35,7 +35,7 @@ void motors(int16_t left, int16_t right, bool invLDir = true, bool invRDir = fal
   analogWrite(R_PWM, abs(right));
 }
 
-void sensors() {  // с урока 2: для плоттера – левый, правый, ошибка
+void sensors() {  // с урока 2: для плоттера — левый, правый, ошибка
   Serial.print(analogRead(LINE_L));
   Serial.print(' ');
   Serial.print(analogRead(LINE_R));
@@ -58,7 +58,7 @@ void followLine() {  // с урока 2
 uint8_t crossRoad() {
   bool isCross = analogRead(LINE_L) < THRESHOLD && analogRead(LINE_R) < THRESHOLD;
   static bool wasCross = false;  // был ли робот на перекрестке на прошлом шаге
-  static uint8_t count = 0;          // TODO 2 (ответ): static – счетчик не обнуляется между вызовами
+  static uint8_t count = 0;          // TODO 2 (ответ): static — счетчик не обнуляется между вызовами
   if (isCross && !wasCross) count++; // TODO 3 (ответ): +1 только в момент заезда на перекресток
   wasCross = isCross;                // TODO 4 (ответ): запомнить состояние для следующего вызова
   return count;
