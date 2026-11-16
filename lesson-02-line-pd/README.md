@@ -51,9 +51,9 @@
 
 [Видео: подбор P на прямой](https://alekseigrachev2002-maker.github.io/Olympiad-Robot-Lessons/assets/video/scene-2a-p.mp4)
 
-![Спуск P на повороте](../assets/img/scene-2b-turn.png)
+![Съезд на повороте](../assets/img/scene-2b-turn.png)
 
-[Видео: спуск P на повороте](https://alekseigrachev2002-maker.github.io/Olympiad-Robot-Lessons/assets/video/scene-2b-turn.mp4)
+[Видео: съезд P на повороте](https://alekseigrachev2002-maker.github.io/Olympiad-Robot-Lessons/assets/video/scene-2b-turn.mp4)
 
 Числа на видео взяты из модели робота, у вашего робота они будут другими – важен порядок действий.
 
