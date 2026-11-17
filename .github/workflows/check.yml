@@ -20,7 +20,7 @@ jobs:
             - answers/lesson-01-movement
             - answers/lesson-02-line-pd
             - answers/lesson-03-crossroads
-            - lesson-00-robot-test
+            - lesson-00-robot-test/firmware/lesson-00-robot-test
 
   links:
     name: Ссылки и картинки в md
