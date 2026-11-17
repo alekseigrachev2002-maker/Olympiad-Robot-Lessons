@@ -1,5 +1,5 @@
 /*
-lesson-00-robot-test.h — реализация тестов машинки: Iskra Uno + Motor Shield + Troyka Shield.
+lesson-00-robot-test.h — реализация тестов робота: Iskra Uno + Motor Shield + Troyka Shield.
 Лежит рядом с lesson-00-robot-test.ino и открывается в Arduino IDE соседней вкладкой.
 Вывод в порт — короткий: L, R — левый и правый, Hz — частота тиков, mm — путь, cm — расстояние.
 ...Print — только печатают, ...Test — двигают робота или серво.
